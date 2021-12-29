@@ -7,12 +7,12 @@
   </head>
   <body style="text-align: center">
     <canvas id="unity-canvas" width=960 height=600 style="width: 960px; height: 600px; background: #231F20"></canvas>
-    <script src="Build/Build_4-summit-push.loader.js"></script>
+    <script src="Build/Build_4-gzip-summit-push.loader.js"></script>
     <script>
       createUnityInstance(document.querySelector("#unity-canvas"), {
-        dataUrl: "Build/Build_4-summit-push.data.br",
-        frameworkUrl: "Build/Build_4-summit-push.framework.js.br",
-        codeUrl: "Build/Build_4-summit-push.wasm.br",
+        dataUrl: "Build/Build_4-gzip-summit-push.data.gz",
+        frameworkUrl: "Build/Build_4-gzip-summit-push.framework.js.gz",
+        codeUrl: "Build/Build_4-gzip-summit-push.wasm.gz",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "stonefromnothing",
         productName: "jazz-band",
