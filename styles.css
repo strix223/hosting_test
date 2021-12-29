@@ -1,4 +1,9 @@
-html {
+@font-face {
+    font-family: breamcatcher;
+    src:url("breamcatcher.ttf");
+}
+
+html,body {
     overscroll-behavior: none;
 }
 
@@ -8,4 +13,5 @@ body {
 
 #navbar h1 {
     color: #F4D58D;
+    font-family: breamcatcher;
 }
