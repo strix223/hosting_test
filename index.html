@@ -7,7 +7,13 @@
     <link rel="stylesheet" href="styles.css">
   </head>
   <body style="text-align: center">
-    <canvas id="unity-canvas" width=960 height=600 style="width: 960px; height: 600px; background: #231F20"></canvas>
+    <div id="navbar">
+        <h1>Brian Butler Quartet</h1>
+    </div>
+    <main>
+        <canvas id="unity-canvas" width=960 height=600 style="width: 960px; height: 600px; background: #231F20"></canvas>
+    </main>
+    
     <script src="Build/Build.loader.js"></script>
     <script>
       createUnityInstance(document.querySelector("#unity-canvas"), {
