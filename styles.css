@@ -17,6 +17,7 @@ body {
     color: #F4D58D;
     font-family: breamcatcher;
     font-size: 3rem;
+    display: inline-block;
 }
 
 #nav-button {
