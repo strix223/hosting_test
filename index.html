@@ -1,15 +1,25 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Test Site</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <h1>First Page</h1>
-    <a href="nextPage.html">Second Page</a>
-    <script src="index.js"></script>
-</body>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Unity WebGL Player | jazz-band</title>
+  </head>
+  <body style="text-align: center">
+    <canvas id="unity-canvas" width=960 height=600 style="width: 960px; height: 600px; background: #231F20"></canvas>
+    <script src="Build/Build_4-summit-push.loader.js"></script>
+    <script>
+      createUnityInstance(document.querySelector("#unity-canvas"), {
+        dataUrl: "Build/Build_4-summit-push.data.br",
+        frameworkUrl: "Build/Build_4-summit-push.framework.js.br",
+        codeUrl: "Build/Build_4-summit-push.wasm.br",
+        streamingAssetsUrl: "StreamingAssets",
+        companyName: "stonefromnothing",
+        productName: "jazz-band",
+        productVersion: "0.1",
+        // matchWebGLToCanvasSize: false, // Uncomment this to separately control WebGL canvas render size and DOM element size.
+        // devicePixelRatio: 1, // Uncomment this to override low DPI rendering on high DPI displays.
+      });
+    </script>
+  </body>
 </html>
