@@ -13,11 +13,17 @@ body {
 
 #navbar h1 {
     position: fixed;
+    height: 3.5rem;
     color: #F4D58D;
     font-family: breamcatcher;
     font-size: 3rem;
 }
 
+#nav-button {
+    height: 100%;
+}
+
 .icon {
     color: #F4D58D;
+
 }
