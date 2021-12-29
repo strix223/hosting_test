@@ -1,0 +1,11 @@
+{
+  "name": "github-test-site",
+  "version": "1.0.0",
+  "description": "testing github as hosting solution",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Pieter van Laer",
+  "license": "BSD-3-Clause"
+}
