@@ -1,0 +1,30 @@
+@font-face {
+    font-family: breamcatcher;
+    src:url("breamcatcher.ttf");
+}
+
+html,body {
+    overscroll-behavior: none;
+}
+
+body {
+    background: #1C1427;
+}
+
+#navbar h1 {
+    position: fixed;
+    height: 3.5rem;
+    color: #F4D58D;
+    font-family: breamcatcher;
+    font-size: 3rem;
+    display: inline-block;
+}
+
+#nav-button {
+    height: 100%;
+}
+
+.icon {
+    color: #F4D58D;
+    font-size: 3rem;
+}

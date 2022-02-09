@@ -3,18 +3,131 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Unity WebGL Player | jazz-band</title>
+    <title>Brian Butler Quartet</title>
     <link rel="stylesheet" href="styles.css">
   </head>
   <body style="text-align: center">
-    <div id="navbar">
+
+    <nav>
+      <div class="topbar">
+          <h1 class="topbarHeader">Brian Butler Quartet</h1>
+          <hr class="topbarDivider">
+          <ul class="topbarList">
+              <li class="topbarListItem">Listen</li>
+              <li class="topbarListItem">Gallery</li>
+              <li class="topbarListItem">Schedule</li>
+              <li class="topbarListItem">Contact</li>
+          </ul>
+      </div>
+  </nav>
+  <main id="main">
+      <div class="slider" id="slider">
+          <div class="slider-inner">
+              <section class="slider-1 slider-item">
+                 <canvas id="unity-canvas" width=960 height=600 style="width: 960px; height: 600px; background: url('Build/Build2.jpg') center / cover"></canvas> 
+              </section>
+              <section class="slider-2 slider-item">
+                  <div class="gallery">
+                      <div class="gallery-image-container">
+                          <div class="gallery-image image-1"></div> 
+                          <h1 class="image-title">Brian Butler</h1>
+                      </div>
+                      <div class="gallery-image-container">
+                          <div class="gallery-image image-2"></div>
+                          <h1 class="image-title">Noreen Mola</h1>
+                      </div>
+                      <div class="gallery-image-container">
+                          <div class="gallery-image image-3"></div>
+                          <h1 class="image-title">Eric van Laer</h1>
+                      </div>
+                      <div class="gallery-image-container">
+                          <div class="gallery-image image-4"></div>
+                          <h1 class="image-title">Bill Lance</h1>
+                      </div>
+                  </div>
+              </section>
+              <section class="slider-3 slider-item">
+                  <div class="schedule-container">
+                      <div class="schedule-list">
+                          <div class="schedule-item">
+                              <h1 class="schedule-title">Sara's Wine Bar</h1>
+                              <small class="schedule-date">Saturday, February 12th</small>
+                              <h2 class="schedule-time">7 pm - 9 pm</h2>
+                              <hr class="schedule-divider">
+                          </div>
+                          
+                          <div class="schedule-item">
+                              <h1 class="schedule-title">Cave a Vin</h1>
+                              
+                              <small class="schedule-date">Saturday, February 19th</small>
+                              <h2 class="schedule-time">7 pm - 9 pm</h2>
+                              <hr class="schedule-divider">
+                          </div>
+                          
+                          <div class="schedule-item">
+                              <h1 class="schedule-title">Nod Hill Brewery</h1>
+                              <small class="schedule-date">Saturday, February 26th</small>
+                              <h2 class="schedule-time">7 pm - 9 pm</h2>
+                              <hr class="schedule-divider">
+                          </div>
+                          
+                      </div>
+                      <div class="schedule-image-container">
+                          <img src="Band.jpeg" alt="" class="schedule-image">
+                      </div>
+                  </div>
+              </section>
+              <section class="slider-4 slider-item">
+                  <div class="contact-container">
+                      <div class="form">
+                          <input type="text" class="email-input" id="email" placeholder="reply email">
+                          <Textarea class="message" id="message" placeholder="Say Hi!"></Textarea>
+                          <button class="send" id="send">Send</button>
+                      </div>
+                      <div class="email">
+                          <div class="contact">
+                              <h1 class="contact-name">
+                                  Brian Butler
+                              </h1>
+                              <small class="contact-number">
+                                  (203) 521-1662
+                              </small>
+                              <h2 class="contact-email">
+                                  drumsone@hotmail.com
+                              </h2>
+                          </div>
+                          <div class="contact">
+                              <h1 class="contact-name">
+                                  Noreen Mola
+                              </h1>
+                              <small class="contact-number">
+                                  (203) 434-9210
+                              </small>
+                              <h2 class="contact-email">
+                                  noreenmola@gmail.com
+                              </h2>
+                          </div>
+                      </div>
+                  </div>
+              </section>
+          </div>
+      </div>
+  </main>
+  
+  
+
+
+
+
+
+    <!-- <div id="navbar">
         <h1>Brian Butler Quartet</h1>
         <button class="nav-button"><i class="fas fa-bars icon"></i></button>
     </div>
     <main>
-        <canvas id="unity-canvas" width=960 height=600 style="width: 960px; height: 600px; background: url('Build/Build2.jpg') center / cover"></canvas>
-    </main>
+    </main> -->
     
+    <script src="script.js"></script>
     <script src="Build/Build.loader.js"></script>
     <script>
       createUnityInstance(document.querySelector("#unity-canvas"), {
