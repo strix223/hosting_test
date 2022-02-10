@@ -42,4 +42,4 @@ function animateImages() {
 }
 
 init()
-animate()
+// animate()
