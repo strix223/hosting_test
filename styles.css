@@ -80,18 +80,18 @@ nav {
 }
 
 main {
-    position: fixed;
+    /* position: relative;
     top: 0;
     left: 0;
     width: 100%;
-    height: 100vh;
+    height: 100vh; */
 }
 
 .slider {
     position: absolute;
     top: 0;
     left: 0;
-    width: 400vw;
+    width: 100vw;
     height: 100%;
 }
 
@@ -101,6 +101,7 @@ main {
     height: 100%;
     width: 100%;
     display: flex;
+    flex-direction: column;
     justify-content: space-around;
 }
 
@@ -108,7 +109,7 @@ section.slider-item {
     position: relative;
     width: 100%;
     height: 100%;
-    overflow: hidden;
+    /* overflow: hidden; */
     background-color: var(--purple);
 }
 
@@ -363,4 +364,14 @@ section.slider-item {
 }
 .slider-5 { 
     background-color: red;
+}
+
+
+.pageSection {
+    height: 100vh;
+    width: 100%;
+}
+
+#section2 {
+    background-color: #BF0603;
 }

@@ -4,23 +4,45 @@
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <title>Brian Butler Quartet</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles2.css">
   </head>
   <body style="text-align: center">
 
     <nav>
       <div class="topbar">
-          <h1 class="topbarHeader">Brian Butler Quartet</h1>
+          <h1 class="topbarHeader"><i class="fa-solid fa-play play1"></i>Brian Butler Quartet<i class="fa-solid fa-play play2"></i></h1>
           <hr class="topbarDivider">
-          <ul class="topbarList">
+          <!-- <ul class="topbarList">
               <li class="topbarListItem">Listen</li>
               <li class="topbarListItem">Gallery</li>
               <li class="topbarListItem">Schedule</li>
               <li class="topbarListItem">Contact</li>
-          </ul>
+          </ul> -->
       </div>
   </nav>
-  <main id="main">
+
+
+  <main>
+      <section class="pageSection">
+        <canvas id="unity-canvas" width=960 height=600 style="width: 960px; height: 600px; background: url('Build/Build2.jpg') center / cover"></canvas> 
+      </section>
+      <section class="pageSection" id="section2">
+            <div class="gallery">
+                <img src="Brian.jpeg" alt="" class="img">
+                <img src="Noreen.jpeg" alt="" class="img">
+                <img src="Eric.jpeg" alt="" class="img">
+                <img src="Bill.jpeg" alt="" class="img">
+            </div>
+      </section>
+      <section class="pageSection" id="section3">
+            Contact
+      </section>
+
+
+    
+  </main>
+  <!-- <main id="main">
       <div class="slider" id="slider">
           <div class="slider-inner">
               <section class="slider-1 slider-item">
@@ -46,77 +68,10 @@
                       </div>
                   </div>
               </section>
-              <section class="slider-3 slider-item">
-                  <div class="schedule-container">
-                      <div class="schedule-list">
-                          <div class="schedule-item">
-                              <h1 class="schedule-title">Sara's Wine Bar</h1>
-                              <small class="schedule-date">Saturday, February 12th</small>
-                              <h2 class="schedule-time">7 pm - 9 pm</h2>
-                              <hr class="schedule-divider">
-                          </div>
-                          
-                          <div class="schedule-item">
-                              <h1 class="schedule-title">Cave a Vin</h1>
-                              
-                              <small class="schedule-date">Saturday, February 19th</small>
-                              <h2 class="schedule-time">7 pm - 9 pm</h2>
-                              <hr class="schedule-divider">
-                          </div>
-                          
-                          <div class="schedule-item">
-                              <h1 class="schedule-title">Nod Hill Brewery</h1>
-                              <small class="schedule-date">Saturday, February 26th</small>
-                              <h2 class="schedule-time">7 pm - 9 pm</h2>
-                              <hr class="schedule-divider">
-                          </div>
-                          
-                      </div>
-                      <div class="schedule-image-container">
-                          <img src="Band.jpeg" alt="" class="schedule-image">
-                      </div>
-                  </div>
-              </section>
-              <section class="slider-4 slider-item">
-                  <div class="contact-container">
-                      <div class="form">
-                          <input type="text" class="email-input" id="email" placeholder="reply email">
-                          <Textarea class="message" id="message" placeholder="Say Hi!"></Textarea>
-                          <button class="send" id="send">Send</button>
-                      </div>
-                      <div class="email">
-                          <div class="contact">
-                              <h1 class="contact-name">
-                                  Brian
-                              </h1>
-                              <small class="contact-number">
-                                  <!-- (203) 521-1662 -->
-                                  (999) 999-9999
-                              </small>
-                              <h2 class="contact-email">
-                                  <!-- drumsone@hotmail.com -->
-                                  email@email.com
-                              </h2>
-                          </div>
-                          <div class="contact">
-                              <h1 class="contact-name">
-                                  Noreen
-                              </h1>
-                              <small class="contact-number">
-                                  <!-- (203) 434-9210 -->
-                                  (999) 999-9999
-                              </small>
-                              <h2 class="contact-email">
-                                  <!-- noreenmola@gmail.com -->
-                                  email@email.com
-                              </h2>
-                          </div>
-                      </div>
-                  </div>
-              </section>
+              
           </div>
       </div>
-  </main>
+  </main> -->
   
   
 
@@ -131,7 +86,16 @@
     <main>
     </main> -->
     
-    <script src="script.js"></script>
+    <!-- <script src="script.js"></script> -->
+
+    <script>
+        
+        document.addEventListener('wheel', onScroll, false)
+        document.addEventListener('mousemove', onMouse, false)
+        var content = document.getElementById('unity-canvas')
+        function onMouse() { content.style['pointer-events'] = 'auto'; }
+        function onScroll() { content.style['pointer-events'] = 'none'; }
+    </script>
     <script src="Build/Build.loader.js"></script>
     <script>
       createUnityInstance(document.querySelector("#unity-canvas"), {

@@ -1,0 +1,99 @@
+@font-face {
+    font-family: breamcatcher;
+    src:url("breamcatcher.ttf");
+}
+
+.html {
+    scroll-behavior: smooth;
+}
+
+:root {
+    --purple: #1C1427;
+    --gold: #F4D58D;
+    --green: #708D81;
+    --red: #BF0603;
+    --dark-red: #8D0801;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: breamcatcher;
+    background-color: #1C1427;
+    color: #F4D58D;
+    overscroll-behavior: none;
+}
+
+.topbar {
+    position: fixed;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 2rem;
+    z-index: 999;
+}
+
+.topbar h1 {
+    font-size: 3rem;
+    padding: 1rem;
+    cursor: pointer;
+}
+
+.fa-play {
+    margin: 0 1rem;
+}
+
+.play1 {
+    transform: scaleX(-1)
+}
+
+.topbarDivider {
+    width: 75%;
+    border: 1px solid var(--gold);
+}
+
+
+#unity-canvas {
+    margin-top: 10%;
+}
+
+.pageSection {
+    height: 100vh;
+}
+
+.gallery {
+    background-color: #8D0801;
+    height: 100%;
+    padding: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.img {
+    margin: 1rem;
+    height: 40%;
+    width: 40%;
+    object-fit: cover;
+    border-radius: 1rem;
+}
+
+.img:nth-child(2) {
+    object-position: 0 -80px;
+}
+
+.img:nth-child(3) {
+    object-position: 0 -95px;
+}
+
+.img:nth-child(4) {
+   object-position: 0 -10px;
+}
+
