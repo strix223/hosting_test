@@ -37,28 +37,30 @@ function setActiveLink(linkElement) {
 
 scheduleItems.forEach((item, idx) => {
     iframes.forEach(iframe => {
-        iframe.style.display = 'none'
+        iframe.classList.remove('iframe-active')
+
     })
 
 
 
     item.addEventListener('mouseenter', () => {
-        iframes[idx].style.display = 'block'
+        scheduleItems.forEach(i => {
+            i.classList.remove('schedule-item-active')
+        })
+
+        iframes.forEach(i => {
+            i.classList.remove('iframe-active')
+        })
+
+        infoDivs.forEach(i => {
+            i.classList.remove('schedule-info-active')
+        })
+
+        iframes[idx].classList.add('iframe-active')
         infoDivs[idx].classList.add('schedule-info-active')
         scheduleItems[idx].classList.add('schedule-item-active')
     })
     
-
-    item.addEventListener('mouseleave', () => {
-        iframes[idx].style.display = 'none'
-        infoDivs[idx].classList.remove('schedule-info-active')
-        scheduleItems[idx].classList.remove('schedule-item-active')
-
-    })
-})
-
-sections.forEach(section => {
-    console.log(section.offsetTop, section.offsetTop + section.offsetHeight)
 })
 
 window.addEventListener('scroll', () => {
@@ -121,7 +123,7 @@ playerPlaceholder.addEventListener('click', () => {
     
 })
 
-iframes[0].style.display = 'block'
+iframes[0].classList.add('iframe-active')
 
 
 
