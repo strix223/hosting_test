@@ -271,6 +271,18 @@ a, a > .linkItem {
 
 }
 
+.gallery-top-right {
+    position: absolute;
+    /* transform: translateY(-50%); */
+    top: 0;
+    right: 1rem;
+    width: 15%;
+    height: 100%;
+    border-top: 14px solid #F4D58D;
+    border-left: 14px solid #F4D58D;
+    /* background-color: #F4D58D; */
+}
+
 .gallery-left {
     position: absolute;
     transform: translateY(-50%);
@@ -464,6 +476,16 @@ a, a > .linkItem {
     z-index: -1;
 }
 
+.schedule-path-right {
+    position: absolute;
+    background-color: #F4D58D;
+    top: 0;
+    right: 15%;
+    height: 100%;
+    width: 0.99%;
+    z-index: -1;
+}
+
 .schedule-emphasis {
     color: var(--red);
     font-size: 1.5rem;
@@ -624,6 +646,16 @@ a, a > .linkItem {
     align-items: center;
     justify-content: center;
     padding-top: 5%;
+}
+
+.contact-path {
+    position: absolute;
+    top: 0;
+    right: 15%;
+    height: 30%;
+    width: 30%;
+    border-right: 14px solid #F4D58D;
+    border-bottom: 14px solid #F4D58D;
 }
 
 .contact-left {
