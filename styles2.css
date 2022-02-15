@@ -152,6 +152,7 @@ a, a > .linkItem {
 }
 
 .player-placeholder {
+    position: relative;
     height: 600px;
     width: 960px;
     margin-top: 10%;
@@ -161,10 +162,24 @@ a, a > .linkItem {
     font-size: 3rem;
     background: url('temp_hero_image.jpg') center / cover;
     cursor: pointer;
+    border-radius: 1rem;
 
 }
 
-.player-placeholder:active {
+/* .player-placeholder:hover {
+    color: #BF0603;
+} */
+
+.player-span {
+    padding: 1rem;
+    background-color: #1c1427dc;
+    color: #F4D58D;
+    border-radius: 1rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.player-span:hover {
+    background-color: #1C1427;
     color: #BF0603;
 }
 
