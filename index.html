@@ -10,34 +10,150 @@
   <body style="text-align: center">
 
     <nav>
-      <div class="topbar">
-          <h1 class="topbarHeader"><i class="fa-solid fa-play play1"></i>Brian Butler Quartet<i class="fa-solid fa-play play2"></i></h1>
-          <hr class="topbarDivider">
-          <!-- <ul class="topbarList">
-              <li class="topbarListItem">Listen</li>
-              <li class="topbarListItem">Gallery</li>
-              <li class="topbarListItem">Schedule</li>
-              <li class="topbarListItem">Contact</li>
-          </ul> -->
+      <div class="topbar" id="topbar">
+          <div class="topbar-links-container">
+              <ul class="links links-left">
+                  <a href="#" class=".toplink"><li class="link-item link-active">Listen</li></a>
+                  <a href="#section-gallery" class=".toplink"><li class="link-item">Gallery</li></a>
+              </ul>
+                <h1 class="topbarHeader"><i class="fa-solid fa-play play1"></i>Brian Butler Quartet<i class="fa-solid fa-play play2"></i></h1>
+                
+              <ul class="links links-left">
+                <a href="#section-schedule" class=".toplink"><li class="link-item">Schedule</li></a>
+                <a href="#section-contact" class=".toplink"><li class="link-item">Contact</li></a>
+            </ul>
+          </div>
+        <hr class="topbarDivider">
       </div>
-  </nav>
+    </nav>
 
 
   <main>
-      <section class="pageSection">
-        <canvas id="unity-canvas" width=960 height=600 style="width: 960px; height: 600px; background: url('Build/Build2.jpg') center / cover"></canvas> 
+      <section class="pageSection" id="section-home">
+        <div class="toast-container">
+            <div class="toast-close" id="toast-close">Hide instructions</div>
+            <div class="instructions playerInstructions">
+                <span class="instructions-red">Click</span>&nbsp;on a song to play or pause. &nbsp;
+                <!-- <hr class="instructionDivider"/> -->
+                <span class="instructions-red">Hover</span>&nbsp; mouse over musicians to meet the band. &nbsp;   
+                <!-- <hr class="instructionDivider"/> -->
+                <span class="instructions-red">Click</span>&nbsp; and &nbsp;<span class="instructions-red">Drag</span>&nbsp; mouse to rotate camera.
+            </div>
+
+        </div>
+          
+        <div class="player-placeholder" id="player-placeholder">
+            Click here to listen to the band
+        </div>
+        
+        <!-- <canvas id="unity-canvas" width=960 height=600 style="width: 960px; height: 600px; background: url('Build/Build2.jpg') center / cover"></canvas>  -->
       </section>
-      <section class="pageSection" id="section2">
+      <section class="pageSection" id="section-gallery">
             <div class="gallery">
-                <img src="Brian.jpeg" alt="" class="img">
-                <img src="Noreen.jpeg" alt="" class="img">
-                <img src="Eric.jpeg" alt="" class="img">
-                <img src="Bill.jpeg" alt="" class="img">
+                <div class="img-div div-band1">
+                    <img src="Band.jpeg" alt="" class="img band1">
+                </div>
+                <div class="img-div div-band2">
+                    <img src="Band2.jpeg" alt="" class="img band2">
+                </div>
+                <div class="img-div div-brian">
+                    <img src="Brian.jpeg" alt="" class="img brian">
+                    <h2 class="image-title title-brian">Brian Butler</h2>
+                </div>
+                <div class="img-div div-noreen">
+                    <img src="Noreen.jpeg" alt="" class="img noreen">
+                    <h2 class="image-title title-noreen">Noreen Mola</h2>
+                </div>
+                <div class="img-div div-bill">
+                    <img src="Bill.jpeg" alt="" class="img bill">
+                    <h2 class="image-title title-bill">Bill Lance</h2>
+                </div>
+                <div class="img-div div-eric">
+                    <img src="Eric.jpeg" alt="" class="img eric">
+                    <h2 class="image-title title-eric">Eric van Laer</h2>
+                </div>
             </div>
       </section>
-      <section class="pageSection" id="section3">
-            Contact
+      <section class="pageSection" id="section-schedule">
+            <div class="schedule-container">
+                <div class="schedule-info schedule-info-active">
+                    <span class="schedule-emphasis">Sarah’s Wine Bar</span>&nbsp; Is located upstairs at Bernard’s and serves a separate bistro menu. It boasts a fun and lively atmosphere with a more casual setting, small and large plates, and a $25 Special Wine list. SWB supports the local arts by featuring musicians Wednesday through Saturday nights and hosting the Jazz Masters Series every month. In addition, every three months Sarah’s features a different local artist's work.
+                </div>
+                <div class="schedule-info">
+                    <span class="schedule-emphasis">Cave à Vin</span>
+                    Means wine cellar in French
+                    The French word for cellar is cave pronounced kah'v and the word for wine is vin pronounced veh.
+                    The N is practically silent. 
+                </div>
+                <div class="schedule-info">
+                    <span class="schedule-emphasis">Nod Hill Brewery</span>
+                     Founded in 2017 by David & Robert Kaye, Kyle Acenowr, & Sarah Zitnay, we have strived since opening to craft expressive, balanced & unique beers that encourage a spirit of thoughtful enjoyment.
+                    We brew hop-forward american ales, traditionally-minded Belgian, German & English styles, and spontaneous & mixed fermentation oak-aged beers. All on a 100% solar-powered 10-barrel electric brewhouse.
+
+                </div>
+                <div class="schedule-left">
+                    <div class="schedule-item schedule-item-active" id="item1">
+                        <h1 class="schedule-title">Sara's Wine Bar</h1>
+                        <small class="schedule-date">February 12</small>
+                        <h2 class="schedule-time">7PM - 9PM</h2>
+                        <!-- <hr class="schedule-item-underline"> -->
+                    </div>
+                    <div class="schedule-item" id="item2">
+                        <h1 class="schedule-title">Cave a' Vin</h1>
+                        <small class="schedule-date">February 19</small>
+                        <h2 class="schedule-time">7PM - 9PM</h2>
+                        <!-- <hr class="schedule-item-underline"> -->
+
+                    </div>
+                    <div class="schedule-item" id="item3">
+                        <h1 class="schedule-title">Nod Hill Brewery</h1>
+                        <small class="schedule-date">February 26</small>
+                        <h2 class="schedule-time">7PM - 9PM</h2>
+                        <!-- <hr class="schedule-item-underline"> -->
+                    </div>
+                </div>
+                <div class="schedule-right">
+                    <div class="schedule-location">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2998.686231286528!2d-73.50100028465623!3d41.272167211093006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2a988f3d97a65%3A0x73e35a6976b49afc!2sSarah&#39;s%20Wine%20Bar!5e0!3m2!1sen!2sus!4v1644611410501!5m2!1sen!2sus" style="border:0;" allowfullscreen="" loading="lazy" class="iframe active" id="map1"></iframe>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2996.6981249520654!2d-72.91205068465506!3d41.31543030841598!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e7d9dada9e307b%3A0xa3409b0488acbf2!2sCave%20a&#39;%20Vin!5e0!3m2!1sen!2sus!4v1644612284314!5m2!1sen!2sus" style="border:0;" allowfullscreen="" loading="lazy" class="iframe" id="map2"></iframe>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2998.6331676017926!2d-73.44686808465632!3d41.2733224110215!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e801f30500a3e5%3A0x7d27eb7deb4b7f4c!2sNod%20Hill%20Brewery!5e0!3m2!1sen!2sus!4v1644612355452!5m2!1sen!2sus" style="border:0;" allowfullscreen="" loading="lazy" class="iframe" id="map3"></iframe>
+                    </div>
+                </div>
+            </div>
       </section>
+      <section class="pageSection" id="section-contact">
+            <div class="contact-wrapper">
+                <form class="contact-left">
+                    <input type="text" class="input" id="input" placeholder="Email">
+                    <textarea class="message" id="message" placeholder="Say Hi"></textarea>
+                    <button class="button" id="button">Send</button>
+                </form>
+                <div class="contact-right">
+                    <div class="contact-cta">
+                        <div class="contact-cta-title">Let's Talk!</div>
+                        <small class="contact-small">Fill out the form, or reach out directly</small>
+                        <hr class="contact-divider">
+                    </div>
+                    <a href="#" class="contact-item">
+                        <div class="contact-name">Brian Butler</div>
+                        <div class="contact-expand">
+                            <div class="contact-number">(999) 999-9999</div>
+                            <div class="contact-email">email@email.com</div>
+                        </div>
+                        
+                    </a>
+                    <a href="#" class="contact-item">
+                        <div class="contact-name">Noreen Mola</div>
+                        <div class="contact-expand">
+                            <div class="contact-number">(999) 999-9999</div>
+                            <div class="contact-email">email@email.com</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+      </section>
+
+     
 
 
     
@@ -86,18 +202,18 @@
     <main>
     </main> -->
     
-    <!-- <script src="script.js"></script> -->
+    <script src="Build/Build.loader.js"></script>
+    <script src="script.js"></script>
 
-    <script>
+    <!-- <script>
         
         document.addEventListener('wheel', onScroll, false)
         document.addEventListener('mousemove', onMouse, false)
         var content = document.getElementById('unity-canvas')
         function onMouse() { content.style['pointer-events'] = 'auto'; }
         function onScroll() { content.style['pointer-events'] = 'none'; }
-    </script>
-    <script src="Build/Build.loader.js"></script>
-    <script>
+    </script> -->
+    <!-- <script>
       createUnityInstance(document.querySelector("#unity-canvas"), {
         dataUrl: "Build/Build.data",
         frameworkUrl: "Build/Build.framework.js",
@@ -109,6 +225,6 @@
         // matchWebGLToCanvasSize: false, // Uncomment this to separately control WebGL canvas render size and DOM element size.
         // devicePixelRatio: 1, // Uncomment this to override low DPI rendering on high DPI displays.
       });
-    </script>
+    </script> -->
   </body>
 </html>
