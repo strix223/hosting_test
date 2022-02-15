@@ -16,27 +16,25 @@
                   <a href="#" class=".toplink"><li class="link-item link-active">Listen</li></a>
                   <a href="#section-gallery" class=".toplink"><li class="link-item">Gallery</li></a>
               </ul>
-                <h1 class="topbarHeader"><i class="fa-solid fa-play play1"></i>Brian Butler Quartet<i class="fa-solid fa-play play2"></i></h1>
+                <h1 class="topbar-header"><i class="fa-solid fa-play play1"></i>Brian Butler Quartet<i class="fa-solid fa-play play2"></i></h1>
                 
               <ul class="links links-left">
                 <a href="#section-schedule" class=".toplink"><li class="link-item">Schedule</li></a>
                 <a href="#section-contact" class=".toplink"><li class="link-item">Contact</li></a>
             </ul>
           </div>
-        <hr class="topbarDivider">
+        <hr class="topbar-divider">
       </div>
     </nav>
 
 
   <main>
-      <section class="pageSection" id="section-home">
-        <div class="toast-container">
+      <section class="page-section" id="section-home">
+        <div class="toast-container" id="toast-container">
             <div class="toast-close" id="toast-close">Hide instructions</div>
-            <div class="instructions playerInstructions">
+            <div class="player-instructions">
                 <span class="instructions-red">Click</span>&nbsp;on a song to play or pause. &nbsp;
-                <!-- <hr class="instructionDivider"/> -->
                 <span class="instructions-red">Hover</span>&nbsp; mouse over musicians to meet the band. &nbsp;   
-                <!-- <hr class="instructionDivider"/> -->
                 <span class="instructions-red">Click</span>&nbsp; and &nbsp;<span class="instructions-red">Drag</span>&nbsp; mouse to rotate camera.
             </div>
 
@@ -48,39 +46,42 @@
         
         <!-- <canvas id="unity-canvas" width=960 height=600 style="width: 960px; height: 600px; background: url('Build/Build2.jpg') center / cover"></canvas>  -->
       </section>
-      <section class="pageSection" id="section-gallery">
+      <section class="page-section" id="section-gallery">
             <div class="gallery-top-left"></div>
             <div class="gallery-top-right"></div>
-            <!-- <div class="gallery-left"></div> -->
-            <!-- <div class="gallery-right"></div> -->
             <div class="gallery-center"></div>
+            <div class="img-modal" id="img-modal">
+                <img src="Band.jpeg" alt="" class="modal-img">
+                <div class="modal-close" id="modal-close">Close</div>
+            </div>
             <div class="gallery">
+                
                 <div class="img-div div-band1">
-                    <img src="Band.jpeg" alt="" class="img band1">
+                    <img src="Band.jpeg" alt="" class="img img-band1">
                 </div>
                 <div class="img-div div-band2">
-                    <img src="Band2.jpeg" alt="" class="img band2">
+                    <img src="Band2.jpeg" alt="" class="img img-band2">
                 </div>
                 <div class="img-div div-brian">
-                    <img src="Brian.jpeg" alt="" class="img brian">
-                    <h2 class="image-title title-brian">Brian Butler</h2>
+                    <img src="Brian.jpeg" alt="" class="img img-brian">
+                    <h2 class="image-title">Brian Butler</h2>
                 </div>
                 <div class="img-div div-noreen">
-                    <img src="Noreen.jpeg" alt="" class="img noreen">
-                    <h2 class="image-title title-noreen">Noreen Mola</h2>
+                    <img src="Noreen.jpeg" alt="" class="img img-noreen">
+                    <h2 class="image-title">Noreen Mola</h2>
                 </div>
                 <div class="img-div div-bill">
-                    <img src="Bill.jpeg" alt="" class="img bill">
-                    <h2 class="image-title title-bill">Bill Lance</h2>
+                    <img src="Bill.jpeg" alt="" class="img img-bill">
+                    <h2 class="image-title">Bill Lance</h2>
                 </div>
                 <div class="img-div div-eric">
-                    <img src="Eric.jpeg" alt="" class="img eric">
-                    <h2 class="image-title title-eric">Eric van Laer</h2>
+                    <img src="Eric.jpeg" alt="" class="img img-eric">
+                    <h2 class="image-title">Eric van Laer</h2>
                 </div>
             </div>
       </section>
-      <section class="pageSection" id="section-schedule">
-            <div class="schedule-path"></div>
+      <section class="page-section" id="section-schedule">
+            <div class="schedule-path-left"></div>
             <div class="schedule-path-right"></div>
             <div class="schedule-container">
                 <div class="schedule-info schedule-info-active">
@@ -99,25 +100,27 @@
 
                 </div>
                 <div class="schedule-left">
-                    <div class="schedule-item schedule-item-active" id="item1">
-                        <h1 class="schedule-title">Sara's Wine Bar</h1>
-                        <small class="schedule-date">February 12</small>
-                        <h2 class="schedule-time">7PM - 9PM</h2>
-                        <!-- <hr class="schedule-item-underline"> -->
-                    </div>
-                    <div class="schedule-item" id="item2">
-                        <h1 class="schedule-title">Cave a' Vin</h1>
-                        <small class="schedule-date">February 19</small>
-                        <h2 class="schedule-time">7PM - 9PM</h2>
-                        <!-- <hr class="schedule-item-underline"> -->
-
-                    </div>
-                    <div class="schedule-item" id="item3">
-                        <h1 class="schedule-title">Nod Hill Brewery</h1>
-                        <small class="schedule-date">February 26</small>
-                        <h2 class="schedule-time">7PM - 9PM</h2>
-                        <!-- <hr class="schedule-item-underline"> -->
-                    </div>
+                    <a href="https://goo.gl/maps/pRb1VyCCuZhBgxaP9" target="_blank">
+                        <div class="schedule-item schedule-item-active" id="item1">
+                            <h1 class="schedule-title">Sara's Wine Bar</h1>
+                            <small class="schedule-date">February 12</small>
+                            <h2 class="schedule-time">7PM - 9PM</h2>
+                        </div>
+                    </a>
+                    <a href="https://goo.gl/maps/LNgeJ1wfWeUaF2mJ9" target="_blank">
+                        <div class="schedule-item" id="item2">
+                            <h1 class="schedule-title">Cave a' Vin</h1>
+                            <small class="schedule-date">February 19</small>
+                            <h2 class="schedule-time">7PM - 9PM</h2>
+                        </div>
+                    </a>
+                    <a href="https://goo.gl/maps/QY5dfrXhybQ215DAA" target="_blank">
+                        <div class="schedule-item" id="item3">
+                            <h1 class="schedule-title">Nod Hill Brewery</h1>
+                            <small class="schedule-date">February 26</small>
+                            <h2 class="schedule-time">7PM - 9PM</h2>
+                        </div>
+                    </a>
                 </div>
                 <div class="schedule-right">
                     <div class="schedule-location">
@@ -128,7 +131,7 @@
                 </div>
             </div>
       </section>
-      <section class="pageSection" id="section-contact">
+      <section class="page-section" id="section-contact">
             <div class="contact-wrapper">
                 <div class="contact-path"></div>
                 <form class="contact-left">
@@ -160,82 +163,11 @@
                 </div>
             </div>
       </section>
-
-     
-
-
     
   </main>
-  <!-- <main id="main">
-      <div class="slider" id="slider">
-          <div class="slider-inner">
-              <section class="slider-1 slider-item">
-                 <canvas id="unity-canvas" width=960 height=600 style="width: 960px; height: 600px; background: url('Build/Build2.jpg') center / cover"></canvas> 
-              </section>
-              <section class="slider-2 slider-item">
-                  <div class="gallery">
-                      <div class="gallery-image-container">
-                          <div class="gallery-image image-1"></div> 
-                          <h1 class="image-title">Brian</h1>
-                      </div>
-                      <div class="gallery-image-container">
-                          <div class="gallery-image image-2"></div>
-                          <h1 class="image-title">Noreen</h1>
-                      </div>
-                      <div class="gallery-image-container">
-                          <div class="gallery-image image-3"></div>
-                          <h1 class="image-title">Eric</h1>
-                      </div>
-                      <div class="gallery-image-container">
-                          <div class="gallery-image image-4"></div>
-                          <h1 class="image-title">Bill</h1>
-                      </div>
-                  </div>
-              </section>
-              
-          </div>
-      </div>
-  </main> -->
-  
-  
-
-
-
-
-
-    <!-- <div id="navbar">
-        <h1>Brian Butler Quartet</h1>
-        <button class="nav-button"><i class="fas fa-bars icon"></i></button>
-    </div>
-    <main>
-    </main> -->
     
     <script src="Build/Build.loader.js"></script>
     <script src="script.js"></script>
 
-    <!-- <script>
-        
-        document.addEventListener('wheel', onScroll, false)
-        document.addEventListener('mousemove', onMouse, false)
-        var content = document.getElementById('unity-canvas')
-        function onMouse() { content.style['pointer-events'] = 'auto'; }
-        function onScroll() { content.style['pointer-events'] = 'none'; }
-    </script> -->
-    <!-- <script>
-      createUnityInstance(document.querySelector("#unity-canvas"), {
-        dataUrl: "Build/Build.data",
-        frameworkUrl: "Build/Build.framework.js",
-        codeUrl: "Build/Build.wasm",
-        streamingAssetsUrl: "StreamingAssets",
-        companyName: "stonefromnothing",
-        productName: "jazz-band",
-        productVersion: "0.1",
-        // matchWebGLToCanvasSize: false, // Uncomment this to separately control WebGL canvas render size and DOM element size.
-        // devicePixelRatio: 1, // Uncomment this to override low DPI rendering on high DPI displays.
-      });
-    </script> -->
   </body>
 </html>
-
-
-<!-- sanity check -->
