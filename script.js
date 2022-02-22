@@ -24,9 +24,9 @@ const infoDivs = document.querySelectorAll('.schedule-info')
 const iframes = document.querySelectorAll('.iframe')
 
 // VARS FOR TROUBLESHOOTING
-const test = document.getElementById('test') 
+//const test = document.getElementById('test') 
 
-test.innerHTML = `${window.innerWidth} x ${window.innerHeight}`
+//test.innerHTML = `${window.innerWidth} x ${window.innerHeight}`
 
 
 let current_index = 0
