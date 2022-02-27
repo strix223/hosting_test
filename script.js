@@ -116,11 +116,11 @@ playerPlaceholder.addEventListener('click', () => {
     // CREATE CANVAS ELEMENT WITH ATTRIBUTES
     const canvas = document.createElement('canvas')
     canvas.id = "unity-canvas"
-    canvas.width = 480
-    canvas.height = 300
-    canvas.style.width = 480
-    canvas.style.height = 300
-    canvas.style.background = "url('Build3/original-music-build.jpg') center / cover" 
+    canvas.width = 960
+    canvas.height = 600
+    canvas.style.width = 960
+    canvas.style.height = 600
+    canvas.style.background = "url('Build4/scaling-build.jpg') center / cover" 
 
     // APPEND CANVAS AND REMOVE PLACEHOLDER
     section.appendChild(canvas)
@@ -128,9 +128,9 @@ playerPlaceholder.addEventListener('click', () => {
 
     // LOAD THE WEBPLAYER 
     createUnityInstance(document.querySelector("#unity-canvas"), {
-        dataUrl: "Build3/original-music-build.data",
-        frameworkUrl: "Build3/original-music-build.framework.js",
-        codeUrl: "Build3/original-music-build.wasm",
+        dataUrl: "Build4/scaling-build.data",
+        frameworkUrl: "Build4/scaling-build.framework.js",
+        codeUrl: "Build4/scaling-build.wasm",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "stonefromnothing",
         productName: "jazz-band",
